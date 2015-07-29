@@ -1,0 +1,14 @@
+{
+  "name": "resume_re_re_re_challenge",
+  "version": "1.0.0",
+  "description": "Resume re-re-re challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Catabriea White",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
