@@ -1,18 +1,19 @@
 $(document).ready(function(){
-//    $("#slideToggle").click(function(){
-//        $('.slideTogglebox').slideToggle();
-//    });
-//});
-    $('#resumeButton').prepend("<button id='resumeButton'>Click for resume!</button>");
-//
-    $('#resumeButton').click(function(){
-        $('#bodyContainer').toggle('slow', function() {
+
+    $("#resumeButton").prepend('<button id="resumeButton">Click for resume!</button>');
+    $("#resumeButton").on("click", function() {
+        $("#resumeButton").hide();
+        $("#bodyContainer").slideDown('slow', function () {
             $.ajax({
-                url: "/data-request",
+                url: '/data-request',
                 success: function (data) {
                     console.log(data);
                 }
             });
+        });
+        $("body").on("click", "#bodyContainer", function () {
+            $("#bodyContainer").slideUp();
+            $("#resumeButton").slideDown();
         });
     });
 });
