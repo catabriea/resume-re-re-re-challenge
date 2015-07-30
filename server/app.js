@@ -5,7 +5,7 @@ var path = require('path');
 app.set('port',(process.env.PORT || 5000));
 
 app.get('/data-request', function(req, res){
-    res.json({message : "Resume re-re-re challenge"});
+    res.json({message : "Resume re-re-re challenge is firing"});
 });
 
 app.get('/*', function(req, res){
