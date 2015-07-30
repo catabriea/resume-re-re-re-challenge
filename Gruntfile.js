@@ -11,6 +11,14 @@ module.exports = function(grunt) {
             }
         },
         copy: {
+            css:{
+                expand: true,
+                cwd: "node_modules/",
+                src: [
+                    "css/style.css",
+                ],
+                "dest": "server/public/"
+            },
             bootstrap: {
                 expand: true,
                 cwd: "node_modules/",

@@ -3,7 +3,7 @@ $(document).ready(function(){
 //        $('.slideTogglebox').slideToggle();
 //    });
 //});
-    $('#resumeButton').append("<button id='resumeButton'>Click for resume!</button>");
+    $('#resumeButton').prepend("<button id='resumeButton'>Click for resume!</button>");
 //
     $('#resumeButton').click(function(){
         $('#bodyContainer').toggle('slow', function() {

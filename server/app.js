@@ -13,6 +13,8 @@ app.get('/*', function(req, res){
     res.sendFile(path.join(__dirname, "./public/", file));
 });
 
+app.use(express.static(__dirname + '/public'));
+
 app.listen(app.get('port'), function(){
     console.log("Hey! Listening on Port: " + app.get('port'));
 });
